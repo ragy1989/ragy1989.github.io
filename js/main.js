@@ -125,20 +125,24 @@ function searchClick(){
 }
 
 function ContactsClick(){
+    displaySearchContainer(clear);
     displayMainData(ContactUs);
 }
 
 async function CategoriesClick(){
+    displaySearchContainer(clear);
     await getMealCategories();
     displayMainData(displayMealCategories); 
 }
 
 async function AreaClick(){
+    displaySearchContainer(clear);
     await getMealAreas();
     displayMainData(displayMealAreas); 
 }
 
 async function IngredientsClick(){
+    displaySearchContainer(clear);
     await getMealIngredients();
     displayMainData(displayMealIngredients); 
 }
